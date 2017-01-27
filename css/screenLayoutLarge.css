@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+header a.logo
+{
+	display:block;
+	position: absolute;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+nav
+{
+	width:100%;
+	display:block;
+	position:absolute;
+	background-color: #5c96;
+}
+
+header
+{
+	height: 250px;	/*matcha banner höjd*/
+	background: url(../media/bannerL.svg) no-repeat right 0px;
+}
+
+header a.logo
+{
+	width:300px;
+	height: 100px;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	background-image: url(../media/large.svg);
+}
+
+article
+{
+	padding: 60px 20px 10px 20px;
+}
+
+.promoContainer
+{
+	padding: 0px 0px 15px 20px;
+}
+
+/*delar div i tre och bild från vänster*/
+.promoContainer .promo
+{
+	width:33%;
+	float:left;
+	background-position: 0px 3px
+
+}
+
+/*ramar in text för rutor i div*/
+.promoContainer .promo .content
+{
+	padding: 0px 10px 0px 70px;
+}
+
+/*bar som ger utrymme för banner innan article*/
+nav
+{
+	top:250px;
+
+}
+
+/*bar som ger vit kant mellan article och footer*/
+nav a
+{
+	margin: 12px 0px 10px 20px;
+}
+

@@ -1,0 +1,1 @@
+!function($){$.konami=function(n){var e="72,65,78,71,77,65,78",o=[];$(document).keydown(function(i){o.push(i.keyCode),o.toString().indexOf(e)>=0&&(o=[],$(this).unbind("keydown",arguments.callee),n(i))})}}(jQuery);

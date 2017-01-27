@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+
+body
+{
+  color: #575c7a;
+  line-hight: 1.5em;
+  font-family: Verdana;
+  font-size:14px;
+  background: #515673 url(../media/snowLand.jpg) repeat-x 0px 0px; /*repeat upprepar layout i x led*/
+
+}
+
+.table
+{
+    background-color: #fff;
+    border: 1px;
+}
+
+.cvTable
+{
+    border-collapse: collapse; /* cellram ligger i tabellram*/
+    width: 90%;
+    margin: auto;
+}
+
+th
+{
+  padding: 0 5em 0 0.5em;
+  background-color: #5c9632;
+  border-bottom: 1px solid black;
+  font-size: 1em;
+  color: #00130a;
+}
+
+td
+{
+  padding: 0 5em 0 0.5em;
+  background-color: #fff;
+  border-bottom: 1px solid #CCC;
+  text-align: left;
+  vertical-align: top;
+}
+
+caption
+{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+.page
+{
+  max-width: 850px;           /*låser sidbredd  till 850px*/
+  margin:0px auto 0px auto;   /*upp left ned höger*/
+  position:relative;          /*innehåll i page justeras i relation till page*/
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+h1
+{
+  font-size: 2em;             /*2ggr font-size 14px, rad9*/
+  font-weight: normal;
+  color:#00130a; margin: 0 0 .5em 0;
+}
+
+h2
+{
+  font-size: 1.7em;             
+  margin: 0 0 1em 0;
+}
+
+h3
+{
+  font-size: 1.5em;             
+  margin: 0 0 1em 0;
+}
+
+p
+{
+  margin: 1 0 .75em 0;
+}
+
+#p1
+{
+  height:0px;
+  overflow:hidden;
+  --moz-transition: all .5s linear;
+  --webkit-transition: all .5s linear;
+  --o-transition: all .5s linear;      
+  transition: all .5s linear;
+}
+
+pnav
+{
+  color:#de9000;
+}
+
+a
+{
+  color:#de9000;
+}
+
+a:hover
+{
+  color:#0000FF;
+}
+
+footer
+{
+  font-size: .85em;
+  color: #00130a;
+  background-color: #5c9632;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+
+}
+
+
+nav a
+{
+  color: #00130a;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;        /*block relation till marginal*/
+  font-weight: bold;
+  font-size: .9em;
+}
+
+
+nav a:hover
+{
+  color:#0000FF;
+}
+
+nav p
+{
+  color: #00130a;
+  text-decoration: none;
+  display: inline-block;        /*block relation till marginal*/
+  font-size: .9em;
+}
+
+.twitter-share-button{
+  vertical-align: middle !important;
+}
+
+.fb-share-button{
+  vertical-align: middle !important;
+}

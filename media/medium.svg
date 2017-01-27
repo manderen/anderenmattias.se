@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="212.224" height="52.654" viewBox="0, 0, 212.224, 52.654">
+  <g id="medium" transform="translate(-343, -239.898)">
+    <g>
+      <text transform="matrix(1, 0, 0, 1, 464.64, 258.36)">
+        <tspan x="-72.432" y="10.64" font-family="ContinuumMedium" font-size="28.8" fill="#909090">MANDEREN</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 474.368, 280.461)">
+        <tspan x="-80.855" y="1.908" font-family="ContinuumMedium" font-size="13.68" fill="#909090">FRONT END DEVELOPER</tspan>
+      </text>
+      <g>
+        <path d="M369.236,286.87 C357.784,286.87 348.5,277.586 348.5,266.134 C348.5,254.682 357.784,245.398 369.236,245.398 C380.688,245.398 389.972,254.682 389.972,266.134 C389.972,277.586 380.688,286.87 369.236,286.87 z" fill-opacity="0" stroke="#909090" stroke-width="2.88"/>
+        <path d="M355.412,279.958 L355.412,252.31 L369.236,266.134 L383.06,252.31 L383.06,279.958 L369.236,252.31 L355.412,279.958" fill-opacity="0" stroke="#909090" stroke-width="2.88"/>
+      </g>
+    </g>
+  </g>
+</svg>
