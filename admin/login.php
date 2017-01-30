@@ -1,5 +1,5 @@
 <?php
-//include config
+//accessfile2warehouse
 require_once('../includes/config.php');
 
 
@@ -11,8 +11,8 @@ if( $user->is_logged_in() ){ header('Location: index.php'); }
 <head>
   <meta charset="utf-8">
   <title>Admin Login</title>
-  <link rel="stylesheet" href="../style/normalize.css">
-  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../style/admin.normalize.css">
+  <link rel="stylesheet" href="../style/admin.main.css">
 </head>
 <body>
 
@@ -41,7 +41,7 @@ if( $user->is_logged_in() ){ header('Location: index.php'); }
 
 	if(isset($message)){ echo $message; }
 	?>
-
+	<!-- Submitted user and pass departs to loggin method in class user -->
 	<form action="" method="post">
 	<p><label>Användare</label><input type="text" name="username" value=""  /></p>
 	<p><label>Lösenord</label><input type="password" name="password" value=""  /></p>

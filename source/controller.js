@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 	
 	var questionBank=new Array;
@@ -6,7 +7,7 @@ $(document).ready(function () {
  	var currentWord;
 	var currentClue;
 	var wrongAnswerCount;
-	
+	//REGISTER
  
  
  		$.getJSON('quizbank.json', function(data) { 
@@ -17,12 +18,14 @@ $(document).ready(function () {
 			questionBank[i][1]=data.wordlist[i].clue;
 		}
 		titleScreen();
-		})//gtjson
+		})//GET JSON WORDLIST
  
+
 function titleScreen(){
-	$('#gameContent').append('<div id="gameTitle">HANGMAN</div><div id="startButton" class="button">BEGIN</div>');		
+	$('#gameContent').append('<div id="gameTitle">HÄNGA GUBBE</div>\
+		<div id="startButton" class="button">STARTA</div>');		
 	$('#startButton').on("click",function (){gameScreen()});
-}//display game
+}//GAME DISPLAY
 	
 	
 	
@@ -31,7 +34,7 @@ function gameScreen(){
 	$('#gameContent').append('<div id="pixHolder"><img id="hangman" src="man.png"></div>');
 	$('#gameContent').append('<div id="wordHolder"></div>');
 	$('#gameContent').append('<div id="clueHolder"></div>');
-	$('#gameContent').append('<div id="guesses">Previous guesses:</div>');
+	$('#gameContent').append('<div id="guesses">Tidigare chansning:</div>');
 	$('#gameContent').append('<div id="feedback"></div>');
 	$('#gameContent').append('<form><input type="text" id="dummy" ></form>');
 			
@@ -44,13 +47,13 @@ function gameScreen(){
 		$('#wordHolder').append('<div class="tile" id=t'+i+'></div>');
 	}
 			
-	$('#clueHolder').append("HINT: "+currentClue);
+	$('#clueHolder').append("Ledtråd: "+currentClue);
  
  	
 	$(document).on("keyup",handleKeyUp);
 	$(document).on("click",function(){$('#dummy').focus();});
 	$('#dummy').focus();
-}//gamescreen
+}//GAMESCREEN
 			
 			
 function getWord(){
@@ -59,7 +62,7 @@ function getWord(){
 	currentClue=questionBank[rnd][1];
 	questionBank.splice(rnd,1); 
 	wordArray=currentWord.split("");			
-}//getword
+}//GET WORD
 			
 
 			
@@ -87,7 +90,7 @@ function handleKeyUp(event) {
 			else{wrongAnswer(input);}
 		}//if
 	}//if
-}//handlekeyup
+}//HANDLERKEYUP
 	
 
 function checkAnswer(){
@@ -98,8 +101,9 @@ function checkAnswer(){
 	if(currentAnswer==currentWord){
 		victoryMessage();
 	};
-}//checkanswer
+}//ANSWER CHECK
 		
+
 function wrongAnswer(a){
 	wrongAnswerCount++;
 	var pos=(wrongAnswerCount*-75) +"px"
@@ -107,33 +111,36 @@ function wrongAnswer(a){
 	$('#hangman').css("left",pos);
 	if(wrongAnswerCount==6){
 		defeatMessage();}
-}//wronganswer
-		
+}//ANSWER WRONG
+	
+
 function victoryMessage(){
 	document.activeElement.blur();
 	$(document).off("keyup", handleKeyUp);
-	$('#feedback').append("CORRECT!<br><br><div id='replay' class='button'>CONTINUE</div>");
+	$('#feedback').append("RÄTT!<br><br><div id='replay' class='button'>FORTSÄTT</div>");
 	$('#replay').on("click",function (){
 		if(questionBank.length>0){
 			gameScreen()}
 		else{finalPage()}
 	});
-}//victory
+}//MESSAGE VICTORY
 		
+
 function defeatMessage(){
 	document.activeElement.blur();
 	$(document).off("keyup", handleKeyUp);
-	$('#feedback').append("You're Dead!<br>(answer= "+ currentWord +")<div id='replay' class='button'>CONTINUE</div>");
+	$('#feedback').append("Ajdå!<br> rätt svar: "+ currentWord +"<div id='replay' class='button'>CONTINUE</div>");
 	$('#replay').on("click",function (){
 		if(questionBank.length>0){
 			gameScreen()}
 		else{finalPage()}
 	});
-}//defeat
+}//MASSAGE DEFEAT
+
 
 function finalPage(){
 	$('#gameContent').empty();
-	$('#gameContent').append('<div id="finalMessage">You have finished all the words in the game!</div>');
-}//finalpage
+	$('#gameContent').append('<div id="finalMessage">Du är bäst, alla ord klarade!</div>');
+}//FINAL PAGE
 	
-	});//doc ready
+	});//DOC READY

@@ -1,20 +1,25 @@
+<!-- <script type = "text/javascript">
+        alert("hacked");
+        </script> -->
+
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- encoding character -->
         <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
 
-        <!--Skala i förhållande till skärm, maximum, minimum samma layout porträtt/landskap-->
+        <!--scale align with  screen-->
         <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0"/>
         
         <title>FRONTIER|KYH</title>
-        <!--Standard stillayout-->
-        <link rel="stylesheet" type="text/css" href="css/screenStyles.css" /> 
-         <!--Dator stillayout-->
-        <link rel="stylesheet" type="text/css" href="css/screenLayoutLarge.css" />
-        <!--Platta stillayout-->
-        <link rel="stylesheet" type="text/css" media="only screen and (min-width:401px) and (max-width:600px)" href="css/screenLayoutMedium.css"/> 
-        <!--Telefon stillayout-->
-        <link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:400px)" href="css/screenLayoutSmall.css"/>
+        <!--base layer-->
+        <link rel="stylesheet" type="text/css" href="style/style.screenStyles.css" /> 
+         <!--large layer-->
+        <link rel="stylesheet" type="text/css" href="style/style.screenLayoutLarge.css" />
+        <!--middle layer-->
+        <link rel="stylesheet" type="text/css" media="only screen and (min-width:401px) and (max-width:600px)" href="style/style.screenLayoutMedium.css"/> 
+        <!--small layer-->
+        <link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:400px)" href="style/style.screenLayoutSmall.css"/>
 
         
     </head>
@@ -52,6 +57,7 @@
                 <div class="content">                        
                     <h3>Examen</h3>
                     <p id="exam"></p>
+                    <!-- youtube plugin -->
                     <iframe title="YouTube video player" class="youtube-player" type="text/html" 
 width="640" height="390" src="http://www.youtube.com/embed/C4r9NLpyCQc"
 frameborder="0" allowFullScreen></iframe>
@@ -80,7 +86,7 @@ frameborder="0" allowFullScreen></iframe>
         <nav>
             <a href="/index.php">Startsida</a>
             <a href="/cv.php">CV</a>  
-            <a href="/vision.php">Portfolio</a>
+            <a href="/portfolio.php">Portfolio</a>
 
                 
             <!--twitter plugin-->
@@ -93,7 +99,7 @@ frameborder="0" allowFullScreen></iframe>
         </nav>
                 <footer>
                     &copy;Mattias Anderén
-                    <a href="../admin">Administartion</a>
+                    <a href="../admin">Admin</a>
                 </footer>
         </div>
 
@@ -107,32 +113,32 @@ frameborder="0" allowFullScreen></iframe>
         });
     </script>
      <script>
-    //funktionsanrop, argument datum och id
+    //function call 
     setTimer('01/15/2018 08:0 AM', 'LIA');      //LIA: 15/1-2018 
     setTimer('05/31/2018 08:0 AM', 'exam');     //Examen: 31/5-2018
 
     function setTimer(datum, id)
     {
-        var endDate = new Date(datum);          //Slutdatum tilldelas
+        var endDate = new Date(datum);          //enddate
         var hourSet = 1000*60*60;
-        var dayMS = hourSet*24;               //Dagvärde i millisekunder tilldelas
+        var dayMS = hourSet*24;               //dayvalue in ms
         var timer;
 
         function showResult() {
-            var nowDate = new Date();           //Dagens datum tilldelas
+            var nowDate = new Date();           //today date
             var distance = endDate - nowDate;
             if (distance < 0) {
                 clearInterval(timer);
                 document.getElementById(id).innerHTML = 'Utgått!';
                 return;
             }
-            var days = Math.floor(distance / dayMS); //retunerar dagar kvar, heltal
+            var days = Math.floor(distance / dayMS); //return days left
             var hours = Math.floor((distance%dayMS) / hourSet);
             document.getElementById(id).innerHTML = days + ' dagar, ';
             document.getElementById(id).innerHTML += hours + ' timmar';
         }
 
-        timer = setInterval(showResult, 1000); //Funktionsanrop,visar timer
+        timer = setInterval(showResult, 1000); //timer update
     }
     </script>
 </html>

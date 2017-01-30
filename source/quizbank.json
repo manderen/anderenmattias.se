@@ -1,31 +1,16 @@
-{"wordlist":[
-  
+{"wordlist":[ 
 	{
-		"word":"kangaroo",
-		"clue":"an animal"
-	},
-	 
-	{
-		"word":"starbucks",
-		"clue":"a company"
+		"word":"kyh",
+		"clue":"Skola i stockholm"
 	},
 	{
-		"word":"macaroni",
-		"clue":"a kind of food"
+		"word":"lejon",
+		"clue":"Ett djur"
 	},
 	{
-		"word":"washington",
-		"clue":"a place"
-	},
-	{
-		"word":"turtle",
-		"clue":"a creature"
-	},
-	{
-		"word":"guillotine",
-		"clue":"a machine"
+		"word":"appelsin",
+		"clue":"En frukt"
 	}
-	
 ]
 }
 

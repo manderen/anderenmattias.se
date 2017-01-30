@@ -5,7 +5,7 @@ if (!defined('PASSWORD_DEFAULT')) {
 }
 
     Class Password {
-
+        
         public function __construct() {}
 
 

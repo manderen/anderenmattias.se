@@ -1,3 +1,4 @@
+
 (function ($) {
     $.konami = function (callback) {
         var code = "72,65,78,71,77,65,78";

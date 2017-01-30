@@ -75,66 +75,6 @@
 		"oAP": "\/classes\/class.user.php",
 		"oF": 0
 		},
-	"\/css\/screenLayoutLarge.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/css\/screenLayoutLarge-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/css\/screenLayoutMedium.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/css\/screenLayoutMedium-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/css\/screenLayoutSmall.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/css\/screenLayoutSmall-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/css\/screenStyles.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/css\/screenStyles-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/css\/todo-min.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/css\/todo-min-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/css\/todo.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/css\/todo-min.css",
-		"oF": 0,
-		"oS": 0
-		},
 	"\/cv.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -152,24 +92,6 @@
 		"oA": 2,
 		"oAP": "\/index.php",
 		"oF": 0
-		},
-	"\/js\/engine.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/engine-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/todo.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/todo-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
 		},
 	"\/media\/arrowMobile.svg": {
 		"ft": 2097152,
@@ -275,6 +197,12 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/portfolio.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/portfolio.php",
+		"oF": 0
+		},
 	"\/README.md": {
 		"cS": 0,
 		"eF": 1,
@@ -299,6 +227,24 @@
 		"oAP": "\/savecomment.php",
 		"oF": 0
 		},
+	"\/script\/script.engine.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/script\/script.engine-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/script\/script.todo.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/script\/script.todo-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/source\/Bootstrap\/bootstrap.min.css": {
 		"aP": 0,
 		"bl": 0,
@@ -314,6 +260,15 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/source\/Bootstrap\/bootstrap.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/source\/controller-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/source\/controller-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -388,6 +343,16 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/source\/main-min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/source\/main-min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/source\/main.css": {
 		"aP": 0,
 		"bl": 0,
@@ -414,31 +379,85 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"\/style\/main.css": {
+	"\/style\/admin.main.css": {
 		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 2,
-		"oAP": "\/style\/main-min.css",
+		"oAP": "\/style\/admin.main-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/style\/normalize.css": {
+	"\/style\/admin.normalize.css": {
 		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 2,
-		"oAP": "\/style\/normalize-min.css",
+		"oAP": "\/style\/admin.normalize-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/vision.php": {
-		"ft": 8192,
+	"\/style\/main-min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
 		"oA": 2,
-		"oAP": "\/vision.php",
-		"oF": 0
+		"oAP": "\/style\/main-min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/style\/style.screenLayoutLarge.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/style\/style.screenLayoutLarge-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/style\/style.screenLayoutMedium.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/style\/style.screenLayoutMedium-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/style\/style.screenLayoutSmall.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/style\/style.screenLayoutSmall-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/style\/style.screenStyles.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/style\/style.screenStyles-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/style\/style.todo.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/style\/style.todo-min.css",
+		"oF": 0,
+		"oS": 0
 		}
 	},
 "hooks": [

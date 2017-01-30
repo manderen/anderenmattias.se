@@ -6,13 +6,13 @@
         <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0"/>
         
         <title>FRONTIER|KYH</title>
-        <link rel="stylesheet" type="text/css" href="css/screenStyles.css" />
-        <link rel="stylesheet" type="text/css" href="css/screenLayoutLarge.css" />
-        <link rel="stylesheet" type="text/css" media="only screen and (min-width:401px) and (max-width:600px)" href="css/screenLayoutMedium.css"/> 
-        <link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:400px)" href="css/screenLayoutSmall.css"/>
+        <link rel="stylesheet" type="text/css" href="style/style.screenStyles.css" />
+        <link rel="stylesheet" type="text/css" href="style/style.screenLayoutLarge.css" />
+        <link rel="stylesheet" type="text/css" media="only screen and (min-width:401px) and (max-width:600px)" href="style/style.screenLayoutMedium.css"/> 
+        <link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:400px)" href="style/style.screenLayoutSmall.css"/>
         <link rel="stylesheet" href="source/Bootstrap/bootstrap.min.css" />
         <link rel="stylesheet" href="source/jQuery/jquery.ui.min.css" />
-        <link rel="stylesheet" href="css/todo.css" />
+        <link rel="stylesheet" href="style/style.todo.css" />
         
         
     </head>
@@ -31,11 +31,6 @@
                 <h2>Att göra lista</h2>
             <div class="task-list task-container" id="pending">
                 <h3>Väntlista</h3>
-                <!--<div class="todo-task">
-                    <div class="task-header">Sample Header</div>
-                    <div class="task-date">25/06/1992</div>
-                    <div class="task-description">Lorem Ipsum Dolor Sit Amet</div>
-                </div>-->
             </div>
 
             <div class="task-list task-container" id="inProgress">
@@ -66,7 +61,7 @@
               <script type="text/javascript" src="source/jQuery/jquery.min.js"></script>
             <script type="text/javascript" src="source/Bootstrap/bootstrap.min.js"></script>
             <script type="text/javascript" src="source/jQuery/jquery.ui.min.js"></script>
-            <script type="text/javascript" src="js/todo.js"></script>
+            <script type="text/javascript" src="script/script.todo.js"></script>
 
             <script type="text/javascript">
                 $( "#datepicker" ).datepicker();
@@ -79,6 +74,8 @@
 
         </div>
            
+
+           <!-- NAVIGATE -->
             <nav>
                 <a href="index.php">Startsida</a>
                 <a href="cv.php">CV</a>  
@@ -97,5 +94,5 @@
         </div>
     
     </body>
-    <script type="text/javascript" src="js/engine.js"></script>
+    <script type="text/javascript" src="script/script.engine.js"></script>
 </html>
